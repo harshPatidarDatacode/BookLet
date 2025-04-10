@@ -1,0 +1,28 @@
+.login-page {
+    height: 100vh;
+  }
+  
+  .left-panel {
+    background-color: #1D1D2A;
+    padding: 2rem;
+  }
+  
+  .input-box {
+    background-color: #1D1D2A;
+    border: 1px solid #fff;
+    color: white;
+  }
+  
+  .input-box:focus {
+    background-color: #1D1D2A;
+    color: white;
+    border-color: #007bff;
+    box-shadow: none;
+  }
+  
+  .right-panel {
+    background-image: url('/signinBatman.png');
+    background-size: cover;
+    background-position: center;
+  }
+  

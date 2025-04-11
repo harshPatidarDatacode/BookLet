@@ -46,7 +46,7 @@ const Signin = () => {
         </form>
       </div>
       <div className="col-md-6 right-panel d-none d-md-block">
-        {/* <img src="signinBatman.png" alt="Black Batman Image" srcset="" /> */}
+        <img src="signinBatman.png" alt="Black Batman Image" style={{height:"100%", width:"100%"}} />
       </div>
     </div>
   )

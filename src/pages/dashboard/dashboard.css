@@ -1,0 +1,153 @@
+/* Dashboard.css */
+
+body {
+    background-color: #1D1D2A;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .dashboard-container {
+    min-height: 100vh;
+    background-color: #1D1D2A;
+    overflow-x: hidden;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background-color: #1B1B26;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .nav-link {
+    color: white;
+    background: none;
+    border: none;
+    padding: 12px 15px;
+    font-weight: 500;
+    text-align: left;
+    transition: 0.3s;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    background-color: #29293D;
+    border-radius: 10px;
+    color: #007BFF;
+  }
+  
+  /* Input */
+  .search-input {
+    background-color: #2C2C3C;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 15px;
+    width: 100%;
+  }
+  
+  .search-input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Highlight card */
+  .highlight-card {
+    flex: 1 1 70%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .highlight-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card-img {
+    height: 280px;
+    object-fit: cover;
+  }
+  
+  .card-img-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    border-radius: 15px;
+  }
+  
+  /* Continue Reading */
+  .continue-reading-card {
+    /* background-color: #2B2B3C; */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(#007BFF 39%, #444 39%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .ig{
+    background-image: url("kobra.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle-text {
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Comics */
+  .comic-card {
+    width: 140px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .comic-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .comic-img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .main-content {
+      padding-top: 1rem;
+    }
+  
+    .highlight-card,
+    .continue-reading-card {
+      flex: 1 1 100%;
+    }
+  }
+  
